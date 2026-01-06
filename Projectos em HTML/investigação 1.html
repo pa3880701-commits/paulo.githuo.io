@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CientiSaúde</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+
+    /* Fundo com degradê animado */
+    body {
+      background: linear-gradient(135deg, #0077b6, #00b4d8, #90e0ef, #caf0f8);
+      background-size: 400% 400%;
+      animation: gradientBG 14s ease infinite;
+      color: #333; line-height:1.6;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      background: rgba(0,119,182,0.9);
+      color:#fff; padding: 15px 10px; position: sticky; top:0; z-index:1000;
+      display:flex; align-items:center; justify-content:center; gap:15px; flex-wrap:wrap; text-align:center;
+    }
+    header img { height:60px; border-radius:8px; }
+    header h1 { font-size:28px; margin:0; }
+    nav { margin-top:8px; width:100%; text-align:center; }
+    nav a {
+      color:#fff; text-decoration:none; margin:0 12px; font-weight:bold; padding:6px 12px; border-radius:6px;
+      transition: background 0.3s, color 0.3s;
+    }
+    nav a:hover { background:#ffd60a; color:#000; }
+
+    section {
+      padding: 50px 20px; max-width:1000px; margin:30px auto;
+      background: rgba(255,255,255,0.9); border-radius:12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    section h2 { color:#0077b6; margin-bottom:18px; }
+
+    .card-container { display:flex; justify-content:center; gap:24px; flex-wrap:wrap; }
+    .card {
+      background:#fff; padding:18px; border-radius:10px; width:280px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s; text-align:left;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow:0 8px 18px rgba(0,0,0,0.18); }
+    .card h3 { color:#0077b6; margin-bottom:8px; }
+
+    footer {
+      background: rgba(0,119,182,0.9); color:#fff; text-align:center; padding:14px 0; margin-top:30px;
+      border-top-left-radius:12px; border-top-right-radius:12px;
+    }
+    footer p { font-size:14px; margin:0; }
+
+    /* Estilo para contactos */
+    .contact-box p {
+      margin:10px 0;
+      font-size:16px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .contact-box strong {
+      color:#0077b6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpeg">
+    <h1>CientiSaúde</h1>
+    <nav>
+      <a href="#formacao">Formação</a>
+      <a href="#consultoria">Consultoria</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#aluguer">Aluguer</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+  </header>
+
+  <section id="formacao">
+    <h2>Formação e Capacitação em Saúde</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Cursos e Workshops</h3>
+        <p>Seminários e palestras com práticas baseadas em evidências e protocolos de segurança.</p>
+      </div>
+      <div class="card">
+        <h3>Metodologia Científica</h3>
+        <p>Treinamentos em pesquisa, cuidados de enfermagem de alta qualidade e biossegurança.</p>
+      </div>
+      <div class="card">
+        <h3>Segurança do Paciente</h3>
+        <p>Capacitação para melhorar a prática clínica com foco na segurança do paciente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="consultoria">
+    <h2>Consultoria Científica e Investigação</h2>
+    <ul>
+      <li>Mentoria para pesquisadores, docentes e estudantes em teses, dissertações e artigos científicos.</li>
+      <li>Apoio na elaboração e acompanhamento de projetos de investigação e publicações.</li>
+      <li>Consultoria personalizada para departamentos e grupos de pesquisa.</li>
+    </ul>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços de Saúde e Gestão</h2>
+    <ul>
+      <li>Prestação de serviços de saúde e assistência médico-sanitária (incluindo home-care).</li>
+      <li>Montagem de enfermaria domiciliar para cuidados multidisciplinares.</li>
+      <li>Apoio e gestão de unidades de saúde (clínicas, hospitais e centros especializados).</li>
+    </ul>
+  </section>
+
+  <section id="aluguer">
+    <h2>Alocação e Aluguer de Materiais Hospitalares</h2>
+    <p>Disponibilizamos cadeiras de rodas, camas hospitalares e outros equipamentos para cuidados domiciliares.</p>
+  </section>
+
+  <section id="contactos">
+    <h2>Contactos</h2>
+    <div class="contact-box" style="max-width:600px; margin:0 auto; background:#fff; padding:20px; border-radius:12px; box-shadow:0 6px 14px rgba(0,0,0,0.12);">
+      <p>📞 <strong>Telefone:</strong> +244 999 999 999</p>
+      <p>📧 <strong>Email:</strong> info@cientisaude.com</p>
+      <p>💬 <strong>WhatsApp:</strong> +244 912 345 678</p>
+      <p>📍 <strong>Endereço:</strong> Rua da Saúde, nº 123, Benguela – Angola</p>
+      <p style="margin-top:15px; color:#0077b6; font-weight:bold;">
+        Ligue agora ou converse com nossos médicos para tirar dúvidas e receber orientação especializada.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&reg; 2026 CientiSaúde. Evidência, método e excelência em saúde.</p>
+  </footer>
+</body>
+</html>
+
